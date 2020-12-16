@@ -46,7 +46,7 @@ setInterval(() => {
 
 
 
-var form = document.getElementById('form');
+let form = document.getElementById('form');
   form.addEventListener("submit", e => {
     e.preventDefault();
     fetch(form.action, {
@@ -58,4 +58,4 @@ var form = document.getElementById('form');
       // you can put any JS code here
       window.location.href = 'http://127.0.0.1:5500/#connect';
     });
-  });
+});
