@@ -33,7 +33,6 @@
 <path d="M518 195L449 236" stroke="#0085FF" stroke-opacity="0.32" stroke-width="2" stroke-dasharray="3.2 3.2"/>
 <path d="M518 195L449 153" stroke="#0085FF" stroke-opacity="0.32" stroke-width="2" stroke-dasharray="3.2 3.2"/>
 <path d="M787 192H847" stroke="#0085FF" stroke-opacity="0.62" stroke-width="2" stroke-dasharray="3.2 3.2"/>
-<path d="M624.024 91.4545H631.988L640.4 111.977H640.758L649.17 91.4545H657.135V122H650.871V102.119H650.617L642.712 121.851H638.447L630.542 102.044H630.288V122H624.024V91.4545ZM662.456 122V91.4545H668.914V116.675H682.009V122H662.456Z" fill="black"/>
 <defs>
 <clipPath id="clip0">
 <rect width="18" height="18" fill="white" transform="translate(886 195)"/>

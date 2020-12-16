@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/style/css/main.css?v1.45">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <title>Qonverty</title>
 </head>
@@ -23,17 +22,28 @@
         </div>
     </header>
     <main>
-        <section class="intro">
+        <section id='intro' class="intro">
             <div class="container">
                 <div class="intro__content">
                     <div class="intro__flex">
                         <div class="intro__left">
                             <span class="intro__title">УВЕЛИЧЬТЕ ДОХОДЫ МОБИЛЬНЫХ ПРОДУКТОВ</span>
                             <p class="intro__description">С помощью тестирования различных дизайнов пейволлов на базе <span>машинного обучения</span></p>
-                            <button class="intro__demo-btn">demo</btton>
+                            <a 
+                                class="intro__demo-btn"
+                                href="#connect"
+                            >demo</a>
                         </div>
                         <div class="intro__right">
                             <img src="/img/illustrations/intro.svg"/>
+                            <div>
+                                <span>Делается в вебе с <a href='#'>Google Experiments</a> и <a href='#'>Optimizely</a></span>
+                                <span>Тестируется для <a href='#'>App Store</a> и <a href='#'>Google Play</a></span>
+                            </div>
+                            <a 
+                                class="intro__get-btn"
+                                href="#connect"
+                            >Get</a>
                         </div>
                     </div>
                     
@@ -46,6 +56,19 @@
                 </div>
             </div>
         </section>
+        <section class="i-want">
+            <div class="container">
+                <div class="i-want__content">
+                    <span id='stringOption1' class="i-want__label active">Я хочу <span>тестировать пейволы без перезаливки билда</span></span>
+                    <span id='stringOption2' class="i-want__label">Я хочу <span>тестировать сразу несколько дизайнов пейволлов</span></span>
+                    <span id='stringOption3' class="i-want__label">Я хочу <span>добавлять в тест локализации текстов</span></span>
+                    <a
+                        class="i-want__connect-btn"
+                        href="#connect"
+                    >Подключить</a>
+                </div>
+            </div>
+        </section>
         <section class="testing">
             <div class="container">
                 <div class="testing__content">
@@ -53,14 +76,14 @@
                     <div class="testing__flex">
                         <div class="testing__left">
                             <div class="testing__list">
-                                <span class="testing__list__item">Тестируйте 2 и более элементов дизайна.</span>
-                                <span class="testing__list__item">Определите, какая комбинация вариантов приводит к наивысшей конверсии.</span>
-                                <span class="testing__list__item">Максимализируйте конверсию Install to Paid.</span>
+                                <span class="testing__list__item">Тестируйте <span>2 и более</span> элементов дизайна.</span>
+                                <span class="testing__list__item">Определите, какая <span>комбинация вариантов</span> приводит к наивысшей конверсии.</span>
+                                <span class="testing__list__item">Максимализируйте конверсию <span></span>Install to Paid.</span></span>
                                 <span class="testing__list__item">ML использует данные предыдущих тестов и по ним принимает решение.</span>
                             </div>
                             <a 
-                                href="#"
                                 class="testing__learn-more-btn"
+                                href="#connect"
                             >learn more</a>
                         </div>
                         <div class="testing__right">
@@ -99,26 +122,17 @@
                     <div class="get-report__variation">
                         <img src="/img/screenshots/screenshot-1.svg"/>
                         <span class="variation__name">Variation A</span>
-                        <span class="variation__percent">
-                            <span>10%</span>
-                            <span>+3%</span>
-                        </span>
+                        <span class="variation__percent">+3%</span>
                     </div>
                     <div class="get-report__variation">
                         <img src="/img/screenshots/screenshot-2.svg"/>
                         <span class="variation__name">Variation B</span>
-                        <span class="variation__percent">
-                            <span>8%</span>
-                            <span>+0,95%</span>
-                        </span>
+                        <span class="variation__percent">+0,95%</span>
                     </div>
                     <div class="get-report__variation">
                         <img src="/img/screenshots/screenshot-3.svg"/>
                         <span class="variation__name">Variation C</span>
-                        <span class="variation__percent">
-                            <span>24%</span>
-                            <span>+9,6%</span>
-                        </span>
+                        <span class="variation__percent">+9,6%</span>
                     </div>
                 </div>
                 <div class="get-report__social">
@@ -127,7 +141,7 @@
                 </div>
             </div>
         </section>
-        <section class="connect">
+        <section id='connect' class="connect">
             <div class="container">
                 <div class="connect__content">
                     <span class="section__title">Подключите <span>Qonverty</span> сегодня</span>
@@ -141,6 +155,7 @@
                             type="submit"
                         >подключить</button>
                     </div>
+                    
                     <span>Делается в вебе с <a href='#'>Google Experiments</a> и <a href='#'>Optimizely</a></span>
                     <span>Тестируется для <a href='#'>App Store</a> и <a href='#'>Google Play</a></span>
                 </div>
@@ -156,8 +171,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/script.min.js?v2.1"></script>
-
+    <script src="js/zenscroll-min.js"></script>
+    <script src="js/script.js?v2.1"></script>
 </body>
 </html>
