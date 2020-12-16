@@ -41,3 +41,21 @@ setInterval(() => {
 
   document.getElementById(`stringOption${currentString}`).classList.add("active");
 }, 4000);
+
+
+
+
+
+var form = document.getElementById('form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      window.location.href = 'http://127.0.0.1:5500/#connect';
+    });
+  });

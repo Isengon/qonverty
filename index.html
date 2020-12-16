@@ -149,17 +149,21 @@
             <div class="container">
                 <div class="connect__content">
                     <span class="section__title">Подключите <span>Qonverty</span> сегодня</span>
-                    <div class="input__box">
+                    <form 
+                        class='input__box'
+                        id='form'
+                        method="post"
+                        action="https://sheetdb.io/api/v1/a8aq10ypbelmy"
+                    >
                         <input 
                             placeholder="Ваш контакт в Telegram"
-                            name='username'
+                            name='data[username]'
                         />
                         <button
                             class="connect__btn"
                             type="submit"
                         >подключить</button>
-                    </div>
-                    
+                    </form>
                     <span>Делается в вебе с <a href='#'>Google Experiments</a> и <a href='#'>Optimizely</a></span>
                     <span>Тестируется для <a href='#'>App Store</a> и <a href='#'>Google Play</a></span>
                 </div>
