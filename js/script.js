@@ -1,14 +1,4 @@
-const vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', vh+'px');
-
-window.addEventListener('resize', function() {
-  const vh = window.innerHeight * 0.01;
-
-  document.documentElement.style.setProperty('--vh', vh+'px');
-});
-
-
-
+// adaptive position of the intro block background
 const setIntroBgPosition = () => {
   var introBlock = document.getElementById('intro')
 
@@ -20,16 +10,14 @@ const setIntroBgPosition = () => {
   }
 }
 setIntroBgPosition()
-
 window.addEventListener("resize", function() {
   setIntroBgPosition()
 });
 
 
 
-
+// dynamic change of text in a block
 let currentString = 1
-
 setInterval(() => {
   document.getElementById(`stringOption${currentString}`).classList.remove("active");
 
@@ -44,8 +32,7 @@ setInterval(() => {
 
 
 
-
-
+// form processing
 let form = document.getElementById('form');
   form.addEventListener("submit", e => {
     e.preventDefault();
