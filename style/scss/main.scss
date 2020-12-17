@@ -460,6 +460,7 @@ body {
 .testing__left {
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 40px;
 }
 .testing__list {
     display: flex;
@@ -830,5 +831,51 @@ body {
 
     span {
         text-align: center;
+    }
+}
+
+
+
+// FORM BANNER
+.form__banner {
+    position: fixed;
+    
+    height: 100px;
+    background-color: rgba($blue, 1);
+    transition: 0.5s;
+    top: -100px;
+
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+
+    border-radius: 5px;
+
+
+    @media screen and (max-width: 600px) {
+        left: 5px;
+        right: 5px;
+        width: auto;
+    }
+
+    &.active {
+        transform: translateY(105px);
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+
+    span {
+        color: #fff;
+        font-weight: 400;
+        font-size: 20px;
     }
 }

@@ -44,5 +44,14 @@ let form = document.getElementById('form');
     ).then((html) => {
       // you can put any JS code here
       window.location.href = 'http://127.0.0.1:5500/#connect';
+      const formBanner = document.getElementById('formBanner')
+      formBanner.classList.add('active')
+      const usernameInput = document.getElementById('usernameInput')
+      usernameInput.value = ''
+      setTimeout(() => {
+        //formBanner.classList.remove('active')
+      }, 5000)
     });
 });
+
+

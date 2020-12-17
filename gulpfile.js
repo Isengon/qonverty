@@ -32,7 +32,7 @@ gulp.task('compress-html', function() {
 
 gulp.task('watch', function() {
   gulp.watch('./style/scss/**/*.scss', gulp.series('compile-compress-scss'));
-  gulp.watch('./js/script.js', gulp.series('compress-js'));
+  //gulp.watch('./js/script.js', gulp.series('compress-js'));
   gulp.watch('./index.html', gulp.series('compress-html'));
 });
  
