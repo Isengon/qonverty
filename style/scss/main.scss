@@ -90,6 +90,10 @@ body {
     top: 0;
     height: 100px;
     z-index: 9999;
+
+    @media screen and (max-width: 600px) {
+        height: 75px;
+    }
 }
 .header__content {
     display: flex;
@@ -97,6 +101,10 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+
+    @media screen and (max-width: 600px) {
+        justify-content: center;
+    }
     
     span {
         color: $blue;
@@ -111,7 +119,6 @@ body {
 // INTRO
 .intro {
     height: 100vh;
-    //height: calc(var(--vh, 1vh) * 100);
     position: relative;
     user-select: none;
     -moz-user-select: none;
@@ -124,7 +131,7 @@ body {
 
     @media screen and (max-width: 600px) {
         height: min-content;
-        padding: 40px 0 50px 0;
+        padding: 60px 0 50px 0;
         background-image: none;
     }
 }
@@ -175,7 +182,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 75px);
     }
 
 }
@@ -242,7 +249,12 @@ body {
         line-height: 50px;
         text-align: center;
     }
-
+    @media screen and (max-width: 385px) {
+        font-size: 40px;
+    }
+    @media screen and (max-width: 350px) {
+        font-size: 35px;
+    }
 }
 .intro__description {
     font-size: 19px;
@@ -475,26 +487,31 @@ body {
     }
 }
 .testing__left, .testing__right {
-    width: 50%;
-    max-width: 50%;
-    min-width: 50%;
     display: flex;
 
     @media screen and (max-width: 600px) {
-        width: 100%;
-        max-width: 100%;
-        min-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
     }
 }
 .testing__left {
+    width: 45%;
+    max-width: 45%;
+    min-width: 45%;
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 40px;
+    padding-right: 20px;
 
     @media screen and (max-width: 600px) {
         padding-right: 0;
         margin-bottom: 75px;
     }
+}
+.testing__right {
+    width: 55%;
+    max-width: 55%;
+    min-width: 55%;
 }
 .testing__list {
     display: flex;
