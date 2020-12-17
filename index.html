@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/img/favicon.ico" />
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWQSLDRLWS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EWQSLDRLWS');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/style/css/main.css?v1.0">
+    <link rel="stylesheet" href="/style/css/main.css?v1.25">
 
     <title>Qonverty</title>
 </head>
@@ -37,8 +46,8 @@
                         <div class="intro__right">
                             <img src="/img/illustrations/intro.svg"/>
                             <div>
-                                <span>Делается в вебе с <a href='#'>Google Experiments</a> и <a href='#'>Optimizely</a></span>
-                                <span>Тестируется для <a href='#'>App Store</a> и <a href='#'>Google Play</a></span>
+                                <span>Делается в вебе с <i>Google Experiments</i> и <i>Optimizely</i></span>
+                                <span>Тестируется для <i>App Store</i> и <i>Google Play</i></span>
                             </div>
                             <a 
                                 class="intro__get-btn"
@@ -121,7 +130,7 @@
         </section>
         <section class="get-report">
             <div class="container">
-                <p class="section__title">Получайте отчет по тестам и<br>результатам в удобном формате<br>в <span>Slack</span> или в <span>Telegram</span></p>
+                <p class="section__title">Получайте отчет по тестам и результатам в удобном формате в <span>Slack</span> или в <span>Telegram</span></p>
                 <div class="get-report__flex">
                     <div class="get-report__variation">
                         <div class="variation__left">
@@ -165,8 +174,9 @@
                     </div>
                 </div>
                 <div class="get-report__social">
-                    <a class="slack" href=""></a>
-                    <a class="telegram" href=""></a>
+                    <span class="slack" href=""></span>
+                    <span class="gmail" href=""></span>
+                    <span class="telegram"></span>
                 </div>
             </div>
         </section>
@@ -191,8 +201,8 @@
                             type="submit"
                         >подключить</button>
                     </form>
-                    <span>Делается в вебе с <a href='#'>Google Experiments</a> и <a href='#'>Optimizely</a></span>
-                    <span>Тестируется для <a href='#'>App Store</a> и <a href='#'>Google Play</a></span>
+                    <span>Делается в вебе с <i>Google Experiments</i> и <i>Optimizely</i></span>
+                    <span>Тестируется для <i>App Store</i> и <i>Google Play</i></span>
                 </div>
             </div>
         </section>
@@ -212,6 +222,6 @@
     </div>
 
     <script src="js/zenscroll-min.js"></script>
-    <script src="js/script.js?v2.1"></script>
+    <script src="js/script.js?v1.2"></script>
 </body>
 </html>

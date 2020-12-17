@@ -3,6 +3,7 @@ $red: #D00066;
 $orange: #E8A100;
 $green: #27AF3A;
 $blue: #0085FF;
+$yellow: #E8A100;
 
 
 *,
@@ -75,6 +76,7 @@ body {
     @media screen and (max-width: 600px) {
         font-size: 38px;
         line-height: 45px;
+        text-align: center;
     }
 }
 
@@ -138,7 +140,7 @@ body {
     height: 100%;
 
     @media screen and (max-width: 600px) {
-        padding-bottom: 150px;
+        padding-bottom: 125px;
     }
 }
 
@@ -183,19 +185,25 @@ body {
     background-color: #fff;
 
     div {
-        margin-top: 40px;
+        margin-top: 24px;
         text-align: center;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    span {
-        font-weight: 500;
-
-        a {
-            font-weight: 400;
-            color: $blue;
-        } 
+        span {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+            font-weight: 500;
+            
+            i {
+                color: $yellow;
+                font-style: initial;
+            }
+        }
     }
-      
 }
 .intro__get-btn {
     position: absolute;
@@ -287,6 +295,7 @@ body {
         min-width: auto;
         left: 0;
         right: 0;
+        bottom: 10px;
         transform: none;
     }
 
@@ -302,9 +311,21 @@ body {
             align-items: flex-start;
 
             span {
-                margin: 0 !important;
+                margin: 0;
             }
         }   
+
+        @media screen and (max-width: 600px) {
+            span:nth-child(1) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            span {
+                font-size: 16px;
+            }
+        }
 
 
         &:nth-child(1) {
@@ -321,7 +342,7 @@ body {
         }
         &:nth-child(2) {
             margin-left: 30px;
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 600px) {
                 margin-left: 0;
             }   
 
@@ -388,10 +409,10 @@ body {
 
     &.active {
         display: block;
-        animation-duration: 0.5s;
-        -moz-animation-duration: 0.5s;
-        -webkit-animation-duration: 0.5s;
-        -o-animation-duration: 0.5s;
+        animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -o-animation-duration: 1s;
         animation-name: smoothDisplay;
         -webkit-animation-name: smoothDisplay;
         -moz-animation-name: smoothDisplay;
@@ -438,6 +459,10 @@ body {
 // TESTING
 .testing {
     padding: 150px 0 100px 0;
+
+    @media screen and (max-width: 600px) {
+        padding-bottom: 75px;
+    }
 }
 .testing__flex {
     display: flex;
@@ -474,6 +499,7 @@ body {
 .testing__list {
     display: flex;
     flex-direction: column;
+
 }
 .testing__list__item {
     position: relative;
@@ -527,6 +553,13 @@ body {
     background-repeat: no-repeat;
 }
 
+.testing__right {
+    img {
+        width: 100%;
+        align-self: flex-start;
+    }
+}
+
 
 
 // HOW IT WORKS
@@ -578,6 +611,10 @@ body {
         max-width: 100%;
         min-width: 100%;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         &:nth-child(1),
         &:nth-child(2) {
             margin-bottom: 40px;
@@ -595,6 +632,14 @@ body {
         font-size: 18px;
         font-weight: 500;
         line-height: 32px;
+
+        @media screen and (max-width: 600px) {
+            text-align: center;
+
+            &::before {
+                display: none;
+            }
+        }
 
         &::before {
             position: absolute;
@@ -629,6 +674,22 @@ body {
     background-position: center;
     background-size: calc(100% - 150px) calc(100% - 150px);
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 600px) {
+        padding-top: 100px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .section__title {
+        max-width: 675px;
+
+        @media screen and (max-width: 600px) {
+            max-width: 100%;
+        }
+    }
 }
 .get-report__flex {
     display: flex;
@@ -697,10 +758,6 @@ body {
     img {
         width: 100%;
         height: auto;
-
-        @media screen and (max-width: 600px) {
-            width: 100%;
-        }
     }
 }
 
@@ -730,6 +787,10 @@ body {
             font-weight: 700;
             font-size: 20px;
             margin-bottom: 30px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 18px;
+            }
         }
     }
 
@@ -737,31 +798,55 @@ body {
         font-size: 45px;
         font-weight: 700;
         color: $blue;
+
+        @media screen and (max-width: 600px) {
+            font-size: 35px;
+        }
     }
 }
 
 
 
 .get-report__social {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+    justify-content: space-between;
 
-    a {
-        width: 50px;
-        height: 50px;
+    width: 225px;
+    height: 100px;
+
+    @media screen and (max-width: 600px) {
+        position: initial;
+        height: 55px;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 75px;
+    }
+
+    span {
+        width: 55px;
+        height: 55px;
         background-position: center;
-        background-size: 50px 50px;
+        background-size: 55px 55px;
         background-repeat: no-repeat;
 
         &:nth-child(1) {
-            margin-right: 40px;
         }
 
         &.slack {
+
             background-image: url('../../img/icons/slack.svg');
+        }
+        &.gmail {
+            margin-top: 25%;
+            @media screen and (max-width: 600px) {
+                margin-top: 0;
+            }
+            background-image: url('../../img/icons/gmail.svg');
         }
         &.telegram {
             background-image: url('../../img/icons/telegram.svg');
@@ -843,7 +928,7 @@ body {
         @media screen and (max-width: 600px) {
             padding: 21px;
             border-radius: 5px;
-        box-shadow: 0 3px 10px rgba($blue, 0.5);
+            box-shadow: 0 3px 10px rgba($blue, 0.5);
         }
     }
 
@@ -858,9 +943,9 @@ body {
         font-weight: 500;
         text-align: center;
 
-        a {
-            color: $blue;
-            font-weight: 400;
+        i {
+            color: $yellow;
+            font-style: initial;
         }
     }
 }
